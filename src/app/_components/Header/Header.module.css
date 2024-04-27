@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  box-shadow: #959da533 0 8px 24px;
+}
+
+.headerSection {
+  max-width: 1400px;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header h1 {
+  cursor: pointer;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  transition: transform .3s;
+}
+
+.header h1 a {
+  background: linear-gradient(to right, #ff0000, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
