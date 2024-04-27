@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import ReactQueryProvider from "./_components/ReactQueryProvider/ReactQueryProvider"
+import "./reset.css"
+import ReactQueryProvider from "../_components/ReactQueryProvider/ReactQueryProvider"
+import Header from "../_components/Header/Header"
 
 export const metadata: Metadata = {
   title: "MovieTV",
@@ -17,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReactQueryProvider>
+          <Header />
           <main>{children}</main>
         </ReactQueryProvider>
       </body>
