@@ -33,6 +33,10 @@
   font-style: normal;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Spoqa Han Sans Neo';
 }
