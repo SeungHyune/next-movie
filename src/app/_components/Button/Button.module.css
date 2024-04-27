@@ -1,5 +1,7 @@
 .button {
-  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.6rem;
   font-weight: 500;
   border-radius: 0.5rem;
