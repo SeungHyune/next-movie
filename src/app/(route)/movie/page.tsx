@@ -1,5 +1,36 @@
-const MoviePage = () => {
-  return <h1>영화 검색 페이지 입니다.</h1>
+import {
+  HydrationBoundary,
+  QueryClient,
+  dehydrate,
+} from "@tanstack/react-query"
+import MovieList from "./_components/MovieList/MovieList"
+import { fetchMovieList } from "./_lib/fetchMovieList"
+
+interface MoviePageProps {
+  searchParams: {
+    search: string
+  }
+}
+
+const MoviePage = async ({ searchParams }: MoviePageProps) => {
+  const { search } = searchParams
+
+  const queryClient = new QueryClient()
+  await queryClient.prefetchInfiniteQuery({
+    queryKey: ["movie", "search", search],
+    queryFn: fetchMovieList,
+    initialPageParam: 1,
+  })
+
+  const dehydratedState = dehydrate(queryClient)
+
+  return (
+    <HydrationBoundary state={dehydratedState}>
+      <section>
+        <MovieList search={search} />
+      </section>
+    </HydrationBoundary>
+  )
 }
 
 export default MoviePage
