@@ -1,0 +1,43 @@
+.movie {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  aspect-ratio: 16 / 26;
+}
+
+.movie:hover {
+  transform: scale(1.02)
+}
+
+.movie:hover::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0009;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.movieContent {
+  position: relative;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.movieContent h5 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.movie:hover .movieContent {
+  opacity: 1;
+}
