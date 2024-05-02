@@ -1,0 +1,18 @@
+.searchResult {
+  margin: 2rem 0 1rem;
+}
+
+.searchResult strong {
+  font-family: Bebas Neue, sans-serif;
+  color: #e13232;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.searchResult span {
+  font-size: 2rem;
+  letter-spacing: -0.15rem;
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
