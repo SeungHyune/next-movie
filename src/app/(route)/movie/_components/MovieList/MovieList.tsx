@@ -52,7 +52,7 @@ const MovieList = ({ search }: MovieListProps) => {
   const movieList = data.pages.flatMap((movie) => movie.Search)
 
   return (
-    <section>
+    <section className={styles.movieListSection}>
       <MovieSearchResult
         searchResultTitle={search}
         searchResultLength={Number(data.pages[0].totalResults)}

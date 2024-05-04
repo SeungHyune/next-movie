@@ -26,9 +26,7 @@ const MoviePage = async ({ searchParams }: MoviePageProps) => {
 
   return (
     <HydrationBoundary state={dehydratedState}>
-      <section>
-        <MovieList search={search} />
-      </section>
+      <MovieList search={search} />
     </HydrationBoundary>
   )
 }

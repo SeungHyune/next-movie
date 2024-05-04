@@ -1,3 +1,8 @@
+.movieListSection {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
 .movieList {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

@@ -5,6 +5,7 @@
   cursor: pointer;
   transition: transform 0.3s;
   aspect-ratio: 16 / 26;
+  box-shadow: #32325d40 0 6px 12px -2px,#0000004d 0 3px 7px -3px;
 }
 
 .movie:hover {
