@@ -1,4 +1,4 @@
-import { rootApi } from "@/app/_api/apiClient"
+import { clientRootApi } from "@/app/_api/apiClient"
 import { MovieResponse } from "@/app/_types/movie"
 import { QueryFunction } from "@tanstack/react-query"
 
@@ -9,7 +9,7 @@ export const fetchMovieList: QueryFunction<
 > = async ({ queryKey, pageParam }) => {
   const search = queryKey[2]
 
-  const response = await rootApi(`&s=${search}&page=${pageParam}`)
+  const response = await clientRootApi(`&s=${search}&page=${pageParam}`)
 
   return response
 }

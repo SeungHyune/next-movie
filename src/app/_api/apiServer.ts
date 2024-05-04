@@ -1,7 +1,7 @@
-const BASE_URL = process.env.NEXT_PUBLIC_MOVIE_BASE_URL
-const API_KEY = process.env.NEXT_PUBLIC_MOVIE_API_KEY
+const BASE_URL = process.env.MOVIE_BASE_URL
+const API_KEY = process.env.MOVIE_API_KEY
 
-export const clientRootApi = async (endPoint: string, options = {}) => {
+export const serverRootApi = async (endPoint: string, options = {}) => {
   if (!BASE_URL || !API_KEY) {
     throw new Error("호출 url 혹은 api key를 확인하세요.")
   }
