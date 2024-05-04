@@ -1,0 +1,67 @@
+.movieInfoCoverImage {
+  position: relative;
+  height: 20rem;
+}
+
+.movieInfoCoverImage img {
+  object-fit: cover
+  ;
+}
+
+.movieInfoContainer {
+  display: flex;
+  max-width: 140rem;
+  margin: 2rem auto 0;
+}
+
+.movieInfoContainer .moviePoster {
+  position: relative;
+  width: 35rem;
+  height: 53rem;
+}
+
+.movieInfoContainer .moviePoster image {
+  object-fit: cover;
+}
+
+.movieInfoContainer .movieContent {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.movieInfoContainer .movieContent h3 {
+  padding-top: 2rem;
+  font-size: 2.2rem;
+}
+
+.movieInfoContainer .movieContent h3 small {
+  font-size: 1.6rem;
+  font-weight: 500
+}
+
+.movieInfoContainer .movieContent mark {
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.movieInfoContainer .movieContent ul li {
+  margin-bottom: 2rem;
+}
+
+.movieInfoContainer .movieContent ul li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.movieInfoContainer .movieContent ul li span {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.movieInfoSection button {
+  margin: 2rem auto;
+}
