@@ -1,13 +1,44 @@
 export interface MovieResponse {
-  Search: MovieItem[]
+  Search: MovieItemResponse[]
   totalResults: string
   Response: string
 }
 
-interface MovieItem {
+interface MovieItemResponse {
   Title: string
   Year: string
   imdbID: string
   Type: string
   Poster: string
+}
+
+export interface MovieInfoResponse {
+  Title: string
+  Year: string
+  Rated: string
+  Released: string
+  Runtime: string
+  Genre: string
+  Director: string
+  Writer: string
+  Actors: string
+  Plot: string
+  Language: string
+  Country: string
+  Awards: string
+  Poster: string
+  Ratings: {
+    Source: string
+    Value: string
+  }[]
+  Metascore: string
+  imdbRating: string
+  imdbVotes: string
+  imdbID: string
+  Type: string
+  DVD: string
+  BoxOffice: string
+  Production: string
+  Website: string
+  Response: string
 }
